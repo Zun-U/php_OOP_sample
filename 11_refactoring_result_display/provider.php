@@ -24,7 +24,6 @@ class JankenGame
 
   function judge(int $left_hand, int $right_hand)
   {
-
     if ($left_hand === 0) {
       if ($right_hand === 0) {
         return "draw";
@@ -52,7 +51,7 @@ class JankenGame
     }
   }
 
-  function showResult(int $result) {
+  function showResult(string $result) {
     if ($result === "win") {
       $this->display->win();
     } elseif ($result === "draw") {
