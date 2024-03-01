@@ -1,5 +1,7 @@
 <?php
 
+namespace expansionDisplay;
+
 class JapaneseDisplay
 {
     function show(int $result)

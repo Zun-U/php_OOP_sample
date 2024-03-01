@@ -1,15 +1,14 @@
 <?php
 
-require_once("provider.php");
-require_once("display.php");
+require_once __DIR__ . "../vendor/autoload.php";
 
 // インスタンスの生成は必要に応じてクライアント側で行う
-$display = new JapaneseDisplay();
-$game = new JankenGame($display);
+$display = new expansionDisplay\JapaneseDisplay();
+$game = new expansionJunken\JankenGame($display);
 $game->play(1, 2);
 
-$display = new EnglishDisplay();
-$game = new JankenGame($display);
+$display = new expansionDisplay\EnglishDisplay();
+$game = new expansionJunken\JankenGame($display);
 $game->play(1, 2);
 
 // $display = new ChineseDisplay();

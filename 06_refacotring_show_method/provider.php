@@ -1,6 +1,8 @@
 <?php
 
-require_once("display.php");
+namespace Janken;
+
+use refactoring;
 
 class JankenGame
 {
@@ -46,10 +48,10 @@ class JankenGame
   {
 
     if ($lang === "ja") {
-      $display = new JapaneseDisplay();
+      $display = new refactoring\JapaneseDisplay();
       // $display->show($result); // ←まったく同じ
     } else {
-      $display = new EnglishDisplay();
+      $display = new refactoring\EnglishDisplay();
       // $display->show($result); // ←まったく同じ
     }
     $display->show($result); // こうできる？

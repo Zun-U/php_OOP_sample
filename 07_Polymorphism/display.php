@@ -1,5 +1,7 @@
 <?php
 
+namespace polymorphismDisplay;
+
 class JapaneseDisplay
 {
     function show(int $result)

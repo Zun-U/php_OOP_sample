@@ -1,6 +1,8 @@
 <?php
 
-require_once("display.php");
+namespace polymorphismJunken;
+
+use polymorphismDisplay;
 
 class JankenGame
 {
@@ -50,9 +52,9 @@ class JankenGame
   function getDisplay(string $lang)
   {
     if ($lang === "ja") {
-      return new JapaneseDisplay();
+      return new polymorphismDisplay\JapaneseDisplay();
     } else {
-      return new EnglishDisplay();
+      return new polymorphismDisplay\EnglishDisplay();
     }
   }
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace persistendeDisplay;
+
 interface DisplayInterface
 {
     function show(int $result);

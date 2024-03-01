@@ -1,5 +1,7 @@
 <?php
 
+namespace refactoringResultPersistence;
+
 interface ResultGateWayInterface
 {
     function save(int $leftHand, int $rightHand, int $result);

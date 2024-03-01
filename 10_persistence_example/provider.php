@@ -1,7 +1,6 @@
 <?php
 
-require_once("display.php");
-require_once("persistence.php");
+namespace persisteceJunken;
 
 class JankenGame
 {
@@ -16,7 +15,7 @@ class JankenGame
   }
 
   // じゃんけん
-  function play(int $left_hand, int $right_hand, string $lang)
+  function play(int $left_hand, int $right_hand)
   {
     $result = $this->judge($left_hand, $right_hand);
     $this->display->show($result);

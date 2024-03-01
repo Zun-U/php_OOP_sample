@@ -1,5 +1,7 @@
 <?php
 
+namespace Encapsulate;
+
 // クラス化を行う
 // クラス内部にしか依存しない(clientはproviderの中身に依存しない)
 class JankenGame

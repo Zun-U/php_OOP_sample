@@ -1,6 +1,6 @@
 <?php
 
-require_once("provider.php");
+require_once __DIR__ . "../vendor/autoload.php";
 
-$game = new JankenGame();
+$game = new polymorphismJunken\JankenGame();
 $game->play(1, 2, "ja");

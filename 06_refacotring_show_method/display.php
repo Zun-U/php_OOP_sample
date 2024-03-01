@@ -1,5 +1,7 @@
 <?php
 
+namespace refactoring;
+
 class JapaneseDisplay
 {
     function show(int $result)

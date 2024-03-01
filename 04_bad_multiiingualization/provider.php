@@ -1,5 +1,7 @@
 <?php
 
+namespace BadMultilingualization;
+
 class JankenGame
 {
   // じゃんけん

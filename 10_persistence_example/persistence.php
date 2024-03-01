@@ -1,5 +1,7 @@
 <?php
 
+namespace persistece;
+
 // じゃんけんの結果を『永続化』する
 
 interface ResultGateWayInterface

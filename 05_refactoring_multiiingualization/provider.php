@@ -1,6 +1,8 @@
 <?php
 
-require_once("display.php");
+namespace RefactoringMultilingualization;
+
+use RefactoringMultilingualizationDisplay;
 
 class JankenGame
 {
@@ -62,10 +64,10 @@ class JankenGame
     // 『結果を表示』
 
     if ($lang === "ja") {
-      $display = new JapaneseDisplay();
+      $display = new RefactoringMultilingualizationDisplay\JapaneseDisplay();
       $display->show($result);
     } else {
-      $display = new EnglishDisplay();
+      $display = new RefactoringMultilingualizationDisplay\EnglishDisplay();
       $display->show($result);
     }
   }

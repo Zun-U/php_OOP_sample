@@ -1,5 +1,7 @@
 <?php
 
+namespace refactoringResultDisplay;
+
 interface DisplayInterface
 {
     function win();

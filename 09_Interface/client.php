@@ -1,15 +1,13 @@
 <?php
 
-require_once("provider.php");
-require_once("display.php");
+require_once __DIR__ . "../vendor/autoload.php";
 
-
-$display = new JapaneseDisplay();
-$game = new JankenGame($display);
+$display = new interfaceDisplay\JapaneseDisplay();
+$game = new interfaceJunken\JankenGame($display);
 $game->play(1, 2);
 
-$display = new EnglishDisplay();
-$game = new JankenGame($display);
+$display = new interfaceDisplay\EnglishDisplay();
+$game = new interfaceJunken\JankenGame($display);
 $game->play(1, 2);
 
 

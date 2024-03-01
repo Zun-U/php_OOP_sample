@@ -1,6 +1,6 @@
 <?php
 
-require_once("display.php");
+namespace interfaceJunken;
 
 class JankenGame
 {

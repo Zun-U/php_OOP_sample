@@ -1,5 +1,7 @@
 <?php
 
+namespace interfaceDisplay;
+
 // じゃんけんをするにあたって、「JapaneseDisplay」「EnglishDisplay」両クラスとも、「show」というメソッドを持つ必要がある
 
 // 「interface」は何を実装するかを定義する

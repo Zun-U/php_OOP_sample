@@ -1,6 +1,6 @@
 <?php
 
-require_once("display.php");
+namespace refactoringResultJunken;
 
 class JankenGame
 {
@@ -15,7 +15,7 @@ class JankenGame
   }
 
   // じゃんけん
-  function play(int $left_hand, int $right_hand, string $lang)
+  function play(int $left_hand, int $right_hand)
   {
     $result = $this->judge($left_hand, $right_hand);
     $this->showResult($result);

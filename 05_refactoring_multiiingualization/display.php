@@ -1,5 +1,7 @@
 <?php
 
+namespace RefactoringMultilingualizationDisplay;
+
 // 抽象化したものをクラスにする　→ 『結果を表示する』
 class JapaneseDisplay
 {

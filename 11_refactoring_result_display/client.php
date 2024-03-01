@@ -1,15 +1,13 @@
 <?php
 
-require_once("provider.php");
-require_once("display.php");
+require_once __DIR__ . "../vendor/autoload.php";
 
-
-$display = new JapaneseDisplay();
-$resultGateWay = new DebugReultGateWay();
-$game = new JankenGame($display, $resultGateWay);
+$display = new refactoringResultDisplay\JapaneseDisplay();
+$resultGateWay = new refactoringResultPersistence\DebugReultGateWay();
+$game = new refactoringResultJunken\JankenGame($display, $resultGateWay);
 $game->play(1, 2);
 
-$display = new EnglishDisplay();
-$resultGateWay = new DebugReultGateWay();
-$game = new JankenGame($display, $resultGateWay);
+$display = new refactoringResultDisplay\EnglishDisplay();
+$resultGateWay = new refactoringResultPersistence\DebugReultGateWay();
+$game = new refactoringResultJunken\JankenGame($display, $resultGateWay);
 $game->play(1, 2);
