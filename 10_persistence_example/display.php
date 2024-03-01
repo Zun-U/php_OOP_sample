@@ -1,0 +1,37 @@
+<?php
+
+interface DisplayInterface
+{
+    function show(int $result);
+}
+
+class JapaneseDisplay
+implements DisplayInterface
+{
+    function show(int $result)
+    {
+        if ($result === "win") {
+            echo "勝ち";
+        } elseif ($result === "draw") {
+            echo "引き分け";
+        } else {
+            echo "負け";
+        }
+    }
+}
+
+
+class EnglishDisplay
+implements DisplayInterface
+{
+    function show(int $result)
+    {
+        if ($result === "win") {
+            echo "win";
+        } elseif ($result === "draw") {
+            echo "draw";
+        } else {
+            echo "lose";
+        }
+    }
+}

@@ -1,40 +1,31 @@
 <?php
 
-// じゃんけん
-function play(int $left_hand, int $right_hand)
-{
-  $result = judge($left_hand, $right_hand);
-  show_result($result);
-}
-
 function judge(int $left_hand, int $right_hand)
 {
 
-  // 結果を「-1,0,1」から「"lose","draw","win"」と分かりやすくリファクタリング
-  // ※マジックナンバーを意味のある文字列に書き換えた
   if ($left_hand === 0) {
     if ($right_hand === 0) {
-      return "draw";
+      return 0;
     } elseif ($right_hand === 1) {
-      return "win";
+      return 1;
     } else {
-      return "lose";
+      return -1;
     }
   } elseif ($left_hand === 1) {
     if ($right_hand === 0) {
-      return "lose";
+      return -1;
     } elseif ($right_hand === 1) {
-      return "draw";
+      return 0;
     } else {
-      return "win";
+      return 1;
     }
   } elseif ($left_hand === 2) {
     if ($right_hand === 0) {
-      return "win";
+      return 1;
     } elseif ($right_hand === 1) {
-      return "lose";
+      return -1;
     } else {
-      return "draw";
+      return 0;
     }
   }
 }
